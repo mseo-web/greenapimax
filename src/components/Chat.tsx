@@ -209,7 +209,7 @@ export const Chat: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex-1 flex items-center justify-center overflow-y-auto p-4 space-y-3 relative bg-[#efeae2] dark:bg-[#17181c]">
+            <div className="flex-1 overflow-y-auto p-4 space-y-3 relative bg-[#efeae2] dark:bg-[#17181c]">
                 <div 
                     className="absolute inset-0 pointer-events-none bg-[#9b6515]/10 dark:bg-[#4368fb]/10"
                     style={{
@@ -224,21 +224,21 @@ export const Chat: React.FC = () => {
 
                 {/* Сообщения чата */}
                 {messages.length === 0 ? (
-                    // <div className="text-center text-xs text-gray-400 mt-10">
-                    // Нет сообщений. Напишите первым или нажмите «Проверить сообщения».
-                    // </div>
-
-                    <div className="bg-white/90 dark:bg-[#1f2937]/90 backdrop-blur-md border border-gray-200 dark:border-gray-700 p-6 rounded-2xl max-w-sm text-center flex flex-col items-center gap-3 shadow-xl">
-                        <div className="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xl">
-                            💬
-                        </div>
-                        <h3 className="text-gray-900 dark:text-white text-base font-semibold">
-                            Нет сообщений.
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-300 text-xs leading-relaxed">
-                            Напишите первым или нажмите «Проверить сообщения».
-                        </p>
+                    <div className="text-center text-xs text-gray-400 mt-10">
+                    Нет сообщений. Напишите первым или нажмите «Проверить сообщения».
                     </div>
+
+                    // <div className="bg-white/90 dark:bg-[#1f2937]/90 backdrop-blur-md border border-gray-200 dark:border-gray-700 p-6 rounded-2xl max-w-sm text-center flex flex-col items-center gap-3 shadow-xl">
+                    //     <div className="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xl">
+                    //         💬
+                    //     </div>
+                    //     <h3 className="text-gray-900 dark:text-white text-base font-semibold">
+                    //         Нет сообщений.
+                    //     </h3>
+                    //     <p className="text-gray-600 dark:text-gray-300 text-xs leading-relaxed">
+                    //         Напишите первым или нажмите «Проверить сообщения».
+                    //     </p>
+                    // </div>
                 ) : (
                     messages.map((msg) => (
                     <div
